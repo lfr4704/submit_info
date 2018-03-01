@@ -14,8 +14,18 @@ function submitForm () {
 		password: pass
 	};
 	clients.push(temp);
-	console.log(clients);
-	return submitForm;
+
+	
+		var emailHTML = document.createElement("p");
+		var passwordHTML = document.createElement("p");
+
+		emailHTML.innerHTML = clients[clients.length-1].email;
+		passwordHTML.innerHTML = clients[clients.length-1].password;
+
+		document.getElementById("content").appendChild(emailHTML);
+		document.getElementById("content").appendChild(passwordHTML);
+
+
 }
 
 
