@@ -28,7 +28,13 @@ function submitForm () {
 
 }
 
+/* this code changes a headline on click
+var headline = document.getElementById("mainHeading");
 
+headline.onclick = function() {
+	headline.innerHTML = "Wow a new headline!"
+};
+*/
 
 //intro to objects notes
 /*
